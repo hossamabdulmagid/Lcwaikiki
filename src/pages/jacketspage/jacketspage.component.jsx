@@ -3,7 +3,7 @@ import './jacketspage.styles.scss'
 export const Jackets = () => {
     return (
         <div>
-            <h1> Jackets Page</h1>
+            <h1  className="hStyle"> Jackets Page</h1>
         </div>
 
     )
