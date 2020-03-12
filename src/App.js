@@ -44,11 +44,11 @@ function App() {
   return (
     <div >
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/hats" component={HatsPage} />
-      <Route exact path="/Jackets" component={Jackets} />
-      <Route exact path="/Sneakers" component={Sneakers} />
-      <Route exact path="/Womens" component={Womens} />
-      <Route exact path="/mens" component={Mens} />
+      <Route  path="/hats" component={HatsPage} />
+      <Route  path="/Jackets" component={Jackets} />
+      <Route  path="/Sneakers" component={Sneakers} />
+      <Route  path="/Womens" component={Womens} />
+      <Route  path="/mens" component={Mens} />
 
     </div>
   );
