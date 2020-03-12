@@ -44,7 +44,7 @@ function App() {
   return (
     <div >
       <Route exact path="/" component={HomePage} />
-      <Route  path="/hats" component={HatsPage} />
+      <Route   path="/hats" component={HatsPage} />
       <Route  path="/Jackets" component={Jackets} />
       <Route  path="/Sneakers" component={Sneakers} />
       <Route  path="/Womens" component={Womens} />
