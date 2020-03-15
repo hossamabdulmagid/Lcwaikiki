@@ -28,14 +28,17 @@
   }
 }
 span.option{
-  font-family: 'Black Ops One', cursive;
+  font-family: 'Shojumaru', cursive;
   font-weight: bold;
   margin: 3px;
-  padding:10px;
+  padding:1px;
   font-size: larger;
   padding-top: unset;
   margin-bottom: 5px;
+  color:orange;
+  
   &.hover{
     background-color: black;
+    margin:5px;
   }
 }
