@@ -1,26 +1,41 @@
 .header {
-    height: 70px;
-    width: 100%;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  
-    .logo-container {
-      height: 100%;
-      width: 70px;
-      padding: 25px;
+    align-items: center;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
     }
-  
-    .options {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-  
-      .option {
-        padding: 10px 15px;
-        cursor: pointer;
-      }
+    .logoo {
+      font-family: "Orbitron", sans-serif;
     }
   }
+}
+span.option{
+  font-family: 'Black Ops One', cursive;
+  font-weight: bold;
+  margin: 3px;
+  padding:10px;
+  font-size: larger;
+  padding-top: unset;
+  margin-bottom: 5px;
+  &.hover{
+    background-color: black;
+  }
+}

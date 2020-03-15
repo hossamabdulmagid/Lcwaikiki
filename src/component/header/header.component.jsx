@@ -7,6 +7,7 @@ export const Header = ({ currentUser }) => (
   <div className="header">
     <Link to='/'>
       <Logo className="logo" />
+      <span className="option">lcwaikiki</span>
     </Link>
     <div className="options">
       <Link className="option" to="/shop">
