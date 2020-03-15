@@ -9,6 +9,12 @@
     height: 100%;
     width: 70px;
     padding: 25px;
+    margin-bottom: 10px;
+
+  }
+  .logo{
+    margin-bottom: 10px;
+
   }
 
   .options {
@@ -36,6 +42,7 @@ span.option{
   padding-top: unset;
   margin-bottom: 5px;
   color:black;
+  
   
   &.hover{
     background-color: black;
