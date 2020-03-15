@@ -38,6 +38,7 @@ export class SignIn extends Component {
                         type="email"
                         label="email"
                         required
+
                     />
 
                     <FormInput
@@ -48,13 +49,17 @@ export class SignIn extends Component {
                         label="password"
                         required
                     />
+                    <div className="buttons">
+
                     <CustomButton type="submit">Sign In</CustomButton>
-                    <button className="custom-button2" onClick={signInWithGoogle}>
+                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
                         {''}
                         Sign in with Google {''}
                         
-                        </button>
+                        </CustomButton>
 
+
+                    </div>
                 </form>
 
             </div>
