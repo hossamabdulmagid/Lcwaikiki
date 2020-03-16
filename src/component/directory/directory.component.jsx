@@ -3,7 +3,6 @@ import React from 'react';
 import MenuItem from '../menu-item/menu-item.component';
 
 import './directory.styles.scss';
-import { createUserProfileDocument } from '../../firebase/firebase.utils';
 
 class Directory extends React.Component {
   constructor() {

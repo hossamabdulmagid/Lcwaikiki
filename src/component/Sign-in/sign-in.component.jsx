@@ -20,7 +20,7 @@ export class SignIn extends Component {
         try {
             await auth.signInWithEmailAndPassword(email, password)
             this.setState({ email: '', password: '' })
-        }catch(error){
+        } catch (error) {
             console.log(error);
         }
 
@@ -32,7 +32,10 @@ export class SignIn extends Component {
 
         this.setState({ [name]: value })
     }
+
     render() {
+
+    
         return (
             <div className="sign-in">
                 <h1> I already have an account</h1>
