@@ -6,10 +6,9 @@ import { ShopPage } from './pages/shop/shop.component';
 import Header from './component/header/header.component';
 import { SignInAndSignUpPage } from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { setCurrentUser } from './redux/user/user.action'
+import {setCurrentUser} from './redux/user/user.action'
 import { connect } from 'react-redux'
 class App extends Component {
-
   unsubscribeFromAuth = null;
   componentDidMount() {
     const { setCurrentUser } = this.props;
@@ -20,9 +19,7 @@ class App extends Component {
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data()
-          }
-
-          )
+          })
 
         });
       }
@@ -33,6 +30,7 @@ class App extends Component {
     this.unsubscribeFromAuth();
   }
   render() {
+
     return (
       <div >
         <Header />
