@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import './App.css';
 import { HomePage } from './pages/homepage/homepage.component';
 import { ShopPage } from './pages/shop/shop.component';
 import Header from './component/header/header.component';
@@ -10,6 +9,7 @@ import { setCurrentUser } from './redux/user/user.action'
 import { connect } from 'react-redux'
 import CheckOutPage from './pages/checkout/checkout.component'
 import Contact from './pages/contact/contact.component'
+import { GlobalStyle } from './global.styles'
 class App extends Component {
   unsubscribeFromAuth = null;
   componentDidMount() {
@@ -35,6 +35,7 @@ class App extends Component {
 
     return (
       <div >
+        <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
