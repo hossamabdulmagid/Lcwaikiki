@@ -50,7 +50,6 @@ export const ContentContainer = styled.div`
   border: 1px solid black;
   background-color: white;
   opacity: 0.7;
-  position: absolute;
 `;
 
 export const ContentTitle = styled.span`
