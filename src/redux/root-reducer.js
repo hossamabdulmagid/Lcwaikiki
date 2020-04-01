@@ -7,12 +7,15 @@ import storage from 'redux-persist/lib/storage';
 
 
 
+
+
+//blacklist
 const persistConfig = {
   key: 'root',
   storage,
   whitelist: ['cart']
 };
-
+//whitelist
 const rootReducer = combineReducers({
   user: userReducer,
   cart: cartReducer,

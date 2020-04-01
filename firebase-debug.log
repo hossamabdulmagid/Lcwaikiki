@@ -1,0 +1,37 @@
+[debug] [2020-04-01T19:45:31.855Z] ----------------------------------------------------------------------
+[debug] [2020-04-01T19:45:31.863Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hossam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-04-01T19:45:31.864Z] CLI Version:   7.16.1
+[debug] [2020-04-01T19:45:31.864Z] Platform:      win32
+[debug] [2020-04-01T19:45:31.864Z] Node Version:  v10.16.0
+[debug] [2020-04-01T19:45:31.867Z] Time:          Wed Apr 01 2020 21:45:31 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-04-01T19:45:31.867Z] ----------------------------------------------------------------------
+[debug] [2020-04-01T19:45:31.867Z] 
+[debug] [2020-04-01T19:45:31.893Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-01T19:45:31.894Z] > authorizing via signed-in user
+[debug] [2020-04-01T19:45:31.894Z] [iam] checking project crwn-db-e0df4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-04-01T19:45:31.901Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-01T19:45:31.902Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-01T19:45:32.918Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-01T19:45:32.934Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/crwn-db-e0df4:testIamPermissions  
+
+[debug] [2020-04-01T19:45:36.174Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-01T19:45:36.179Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/crwn-db-e0df4  
+ 
+[debug] [2020-04-01T19:45:47.671Z] Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-04-01T19:45:51.915Z] FirebaseError: Server Error. Client network socket disconnected before secure TLS connection was established
+    at Request._callback (C:\Users\Hossam\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:31:31)
+    at self.callback (C:\Users\Hossam\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.onRequestError (C:\Users\Hossam\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:203:15)
+    at ClientRequest.EventEmitter.emit (domain.js:448:20)
+    at TLSSocket.socketErrorListener (_http_client.js:392:9)
+    at TLSSocket.emit (events.js:198:13)
+    at TLSSocket.EventEmitter.emit (domain.js:448:20)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to get Firebase project crwn-db-e0df4. Please make sure the project exists and your account has permission to access it.
