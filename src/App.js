@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { HomePage } from './pages/homepage/homepage.component';
-import { ShopPage } from './pages/shop/shop.component';
+import ShopPage  from './pages/shop/shop.component'
 import Header from './component/header/header.component';
 import { SignInAndSignUpPage } from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
@@ -31,9 +31,11 @@ class App extends Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
+  
   render() {
 
     return (
+      <>
       <div >
         <GlobalStyle />
         <Header />
@@ -50,6 +52,7 @@ class App extends Component {
 
         </Switch>
       </div>
+      </>
     );
   }
 }
