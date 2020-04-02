@@ -9,6 +9,6 @@ const shopReducer = (state = INITAIL_STATE, action) => {
         default:
             return state;
     }
-}
+};
 
 export default shopReducer;
