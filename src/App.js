@@ -10,7 +10,7 @@ import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './component/header/header.component';
 
 import { GlobalStyle } from './global.styles';
-
+import Contact from './pages/contact/contact.component'
 import { selectCurrentUser } from './redux/user/user.selector';
 import { checkUserSession } from './redux/user/user.action';
 
@@ -34,6 +34,7 @@ const App = ({ checkUserSession, currentUser }) => {
             currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />
           }
         />
+        <Route path='/contact' component={Contact} /> 
       </Switch>
     </div>
   );

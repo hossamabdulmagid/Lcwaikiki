@@ -28,7 +28,7 @@ export const MenuItemContainer = styled.div`
     margin-left: 7.5px;
   }
   @media screen and (max-width: 800px) {
-    height: 200px;
+    height: 500px;
   }
 `;
 
@@ -36,7 +36,7 @@ export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: ;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
 
@@ -50,9 +50,10 @@ export const ContentContainer = styled.div`
   border: 1px solid black;
   background-color: white;
   opacity: 0.7;
-  position: none;
+  position: relative;
 `;
-
+//absolute
+//relative
 export const ContentTitle = styled.span`
   font-weight: bold;
   margin-bottom: 6px;

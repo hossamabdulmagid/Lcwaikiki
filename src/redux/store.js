@@ -10,6 +10,10 @@ const sagaMiddleware = createSagaMiddleware();
 
 const middlewares = [sagaMiddleware];
 
+
+// how to hide action with state in console.log in deplyment app.
+
+
 if (process.env.NODE_ENV === 'development') {
     middlewares.push(logger);
 }
