@@ -36,6 +36,7 @@ const SignUp = ({ signUpStart }) => {
     };
 
     return (
+      
         <SignUpContainer>
             <SignUpTitle>I do not have a account</SignUpTitle>
             <span>Sign up with your email and password</span>
@@ -75,6 +76,7 @@ const SignUp = ({ signUpStart }) => {
                 <CustomButton type='submit'>SIGN UP</CustomButton>
             </form>
         </SignUpContainer>
+       
     );
 };
 

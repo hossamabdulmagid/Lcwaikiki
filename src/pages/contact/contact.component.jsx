@@ -2,11 +2,10 @@ import React from 'react';
 
 import './contact.styles.scss'
 
-
 const Contact = () => (
-    <div className="contact-header">
+    <div className="contact-page">
         <h1> Contact Page</h1>
-        Welcome To <span className="contact-page">Contact </span>
+        <h2>   Welcome To Commerce Shop  </h2>
     </div>
 );
 

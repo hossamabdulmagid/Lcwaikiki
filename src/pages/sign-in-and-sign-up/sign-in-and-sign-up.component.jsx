@@ -5,10 +5,15 @@ import SignUp from '../../component/sign-up/sign-up.component'
 
 
 export const SignInAndSignUpPage = () => (
-    <SignInAndSignUpContainer >
-        <SignIn />
-        <SignUp />
-    </SignInAndSignUpContainer>
+    <div className="container">
+        <div className="row">
+
+            <SignInAndSignUpContainer >
+                <div className="col-sm">        <SignIn /> </div>
+                <div className="col-sm">        <SignUp /> </div>
+            </SignInAndSignUpContainer>
+        </div>
+    </div>
 );
 
 
