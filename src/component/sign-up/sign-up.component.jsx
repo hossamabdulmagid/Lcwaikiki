@@ -1,7 +1,8 @@
+
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 
-import { FormInput } from '../form-input/form-input.component';
+import {FormInput} from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
 import { signUpStart } from '../../redux/user/user.action';
@@ -36,7 +37,6 @@ const SignUp = ({ signUpStart }) => {
     };
 
     return (
-      
         <SignUpContainer>
             <SignUpTitle>I do not have a account</SignUpTitle>
             <span>Sign up with your email and password</span>
@@ -76,7 +76,6 @@ const SignUp = ({ signUpStart }) => {
                 <CustomButton type='submit'>SIGN UP</CustomButton>
             </form>
         </SignUpContainer>
-       
     );
 };
 
